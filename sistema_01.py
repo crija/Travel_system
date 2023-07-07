@@ -1,12 +1,15 @@
 #Criar um programa que rode o valor de um trasporte de classe economica, normal e alta:
 
+def espaço():
+    print()
+
 print('Viagens interestaduais com o menor preço e maior conforto?')
 
-print('')
+espaço()
 
 print('NÃO PERCA TEMPO E GARANJA JÁ A SUA!')
 
-print('')
+espaço()
 
 print('*********** MAS CORRA QUE É POR TEMPO LIMITADO ***********')
 
@@ -14,7 +17,7 @@ print('Promoção imperdível para você!')
 
 print('Deseja consultar a Promoção? ')
 
-print('')
+espaço()
 
 print('Digite (sim) ou (não)*')
 
@@ -27,24 +30,24 @@ elif pergunta == '':
     print('Confira outras viagens semelhantes')
 
 elif pergunta == 'SIM':
-    print('')
+    espaço()
 
 
     print('                      ----SUPER PROMOÇÃO DE CARNAVAL----      ')
 
-    print('')
+    espaço()
 
     print('OPÇÃO 1 :')
 
     print('Na compra de uma viagem com saída do (RS) para (SP) você ganha 15% de desconco na classe (normal).')
 
-    print('')
+    espaço()
 
     print('OPÇÃO 2 :')
 
     print('Na compra de uma viagem com saída de (SP) para (SC) você ganha 10% de desconto na classe (alta).')
 
-    print('')
+    espaço()
 
     print('Digite o número da opção escolhida. 1 ou 2:')
     opçao = int(input('- '))
@@ -59,12 +62,12 @@ elif pergunta == 'SIM':
 
         print('Com o desconto de 15% você pagará apenas {:.2f}'.format(novo))
 
-        print('')
+        espaço()
 
         compra = str(input('Deseja fazer essa compra? ')).upper()
 
         if compra == 'SIM':
-            print('')
+            espaço()
 
             print('Obrigada pela preferencia!')
 
@@ -92,7 +95,7 @@ elif pergunta == 'SIM':
     else:
         print('Opçao {} não é considerada oferta de carnaval.Confira abaixo as viagens fora da promoção.'.format(opçao))
 
-print('')
+espaço()
 
 print('*VIAGENS*')
 
@@ -106,8 +109,7 @@ print('''-------------------------------------------------
 (5)  Rio de Janeiro        X      Paraná
 ------------------------------------------------- ''')
 
-print('')
-
+espaço()
 print('*VALORES*')
 
 print('_' * 98)
@@ -151,7 +153,7 @@ if viagem != 1 and viagem != 2 and viagem != 3 and viagem != 4 and viagem != 5 a
 
 
 elif viagem == 1:
-    print('')
+    espaço()
     print('CARREGANDO...')
     print('')
     print('Origem: São Paulo')
@@ -159,12 +161,9 @@ elif viagem == 1:
     print('Classe: ECONÔMICA')
     print('Valor final: {}.'.format(eSP))
 
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 2:
@@ -176,11 +175,9 @@ elif viagem == 2:
     print('Classe: ECONÔMICA')
     print('Valor final: {}.'.format(eRS))
 
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
+    espaço()
 
     print('OBRIGADA PELA PREFERERENCIA!')
 
@@ -193,218 +190,168 @@ elif viagem == 3:
     print('Classe: ECONÔMICA')
     print('Valor final: {}.'.format(eBH))
 
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 4:
     print('')
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Ceará')
     print('Destino: Tocantins  ')
     print('Classe: ECONÔMICA')
     print('Valor final: {}.'.format(eCE))
-    print('')
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 5:
-    print('')
+    espaço()
     print('CARREGANDO')
-    print('')
+    espaço()
     print('Origem: Rio de Janeiro ')
     print('Destino: Paraná  ')
     print('Classe: ECONÔMICA')
     print('Valor final: {}.'.format(eRJ))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 6:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: São Paulo ')
     print('Destino: Rio de Janeiro')
     print('Classe: NORMAL ')
     print('Valor final: {}.'.format(nSP))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    sleep(2)
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 7:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    sleep()
+    espaço()
     print('Origem: Rio Grande do Sul')
     print('Destino: Santa Catarina')
     print('Classe: NORMAL')
     print('Valor final: {}.'.format(nRS))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 8:
-    print('')
+    espaço()
     print('CARREGANDO')
-    print('')
+    espaço()
     print('Origem: Bahia')
     print('Destino: Minas Gerais ')
     print('Classe: NORMAL')
     print('Valor final: {}.'.format(nBH))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 9:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Ceará')
     print('Destino: Tocantins  ')
     print('Classe: NORMAL')
     print('Valor final: {}.'.format(nCE))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 10:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Rio de Janeiro ')
     print('Destino: Paraná  ')
     print('Classe: NORMAL')
     print('Valor final: {}.'.format(nRJ))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 elif viagem == 11:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Rio de Janeiro ')
     print('Destino: São Paulo ')
     print('Classe: ALTA ')
     print('Valor final: {}.'.format(aRJ))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 
 elif viagem == 12:
-    print('')
+    espaço()
     print('CARREGANDO')
-    print('')
+    espaço()
     print('Origem: Rio Grande do Sul')
     print('Destino: Santa Catarina')
     print('Classe: ALTA')
     print('Valor final: {}.'.format(aRS))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
-
 elif viagem == 13:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Bahia')
     print('Destino: Minas Gerais ')
     print('Classe: ALTA')
     print('Valor final: {}.'.format(aBH))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
-
 elif viagem == 14:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Ceará')
     print('Destino: Tocantins  ')
     print('Classe: ALTA')
     print('Valor final: {}.'.format(aCE))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
-
 elif viagem == 15:
-    print('')
+    espaço()
     print('CARREGANDO...')
-    print('')
+    espaço()
     print('Origem: Rio de Janeiro ')
     print('Destino: Paraná  ')
     print('Classe: ALTA')
     print('Valor final: {}.'.format(aRJ))
-
-    print('')
-
+    espaço()
     print('Sua passagem está sendo processada...')
-
-    print('')
-
+    espaço()
     print('OBRIGADA PELA PREFERERENCIA!')
 
 else:
