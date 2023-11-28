@@ -1,32 +1,11 @@
 #Criar um programa que rode o valor de um trasporte de classe economica, normal e alta:
 
+from funcoes.espaco import espaço
+from funcoes.agradecimento import agradecimento
+from funcoes.print_escolha import print_escolha
+
 from time import sleep
 viagem = ''
-
-def espaço():
-    print()
-
-def print_escolha(origem, destino, classe, valor):
-    espaço()
-    print('Sua passagem está sendo processada...')
-    sleep(2)
-    espaço()
-    print(f'Origem: {origem}')
-    print(f'Destino: {destino}')
-    print(f'Classe: {classe}')
-    print(f'Valor final: {valor}')
-    espaço()
-    print('OBRIGADA PELA PREFERERENCIA!')
-
-def agradecimento():
-    espaço()
-    print('carregando resultado...')
-    sleep(3)
-    print('Compra bem sucedida')
-    print('Obrigada pela preferencia!')
-    print('Temos outras opções de passagens para você! Da classe ecônomica à alta.')
-
-
 
 print('Viagens interestaduais com o menor preço e maior conforto?')
 espaço()
