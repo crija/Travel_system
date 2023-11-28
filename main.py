@@ -50,7 +50,7 @@ elif pergunta == 'SIM':
     espaço()
     print('                      ----SUPER PROMOÇÃO DE CARNAVAL----      ')
     espaço()
-    
+
     print('OPÇÃO 1 :')
 
     print('Na compra de uma viagem com saída do (RS) para (SP) você ganha 15% de desconco na classe (normal).')
@@ -82,7 +82,7 @@ elif pergunta == 'SIM':
 
         if compra == 'SIM':
             agradecimento()
-        
+
         elif compra == 'NAO' or compra == 'NÃO':
             print('Temos outras opções de passagens para você! Da classe ecônomica à alta.')
 
@@ -159,66 +159,68 @@ aRJ = 775.67
 
 viagem = int(input('Digite o número da viagem desejada: '))
 
-if viagem > 15 or viagem == '':
-    print('OPS...viagem não encontrada')
+match viagem:
+    case 1:
+        espaço()
+        print_escolha('São Paulo', 'Rio de Janeiro', 'ECONÔMICA', eSP)
 
-elif viagem == 1:
-    espaço()
-    print_escolha('São Paulo', 'Rio de Janeiro', 'ECONÔMICA', eSP)
+    case 2:
+        espaço()
+        print_escolha('Rio Grande do Sul', 'Santa Catarina', 'ECONÔMICA', eSP)
 
-elif viagem == 2:
-    espaço()
-    print_escolha('Rio Grande do Sul', 'Santa Catarina', 'ECONÔMICA')
-    
-elif viagem == 3:
-    espaço()
-    print_escolha('Bahia', 'Minas Gerais', 'ECONÔMICA', eBH)
+    case 3:
+        espaço()
+        print_escolha('Bahia', 'Minas Gerais', 'ECONÔMICA', eBH)
 
-elif viagem == 4:
-    espaço()
-    print_escolha('Ceará', 'Tocantins', 'ECONÔMICA', eCE)
+    case 4:
+        espaço()
+        print_escolha('Ceará', 'Tocantins', 'ECONÔMICA', eCE)
 
-elif viagem == 5:
-    espaço()
-    print_escolha('Rio de Janeiro', 'Paraná', 'ECONÔMICA', eRJ)
+    case 5:
+        espaço()
+        print_escolha('Rio de Janeiro', 'Paraná', 'ECONÔMICA', eRJ)
 
-elif viagem == 6:
-    espaço()
-    print_escolha('São Paulo', 'Rio de Janeiro', 'NORMAL', nSP)
-    
-elif viagem == 7:
-    espaço()
-    print_escolha('Rio Grande do Sul', 'Santa Catarina', 'NORMAL', nRS)
-    
-elif viagem == 8:
-    espaço()
-    print_escolha('Bahia', 'Minas Gerais', 'NORMAL', nBH)
+    case 6:
+        espaço()
+        print_escolha('São Paulo', 'Rio de Janeiro', 'NORMAL', nSP)
 
-elif viagem == 9:
-    espaço()
-    print_escolha('Ceará', 'Tocantins', 'NORMAL', nCE)
+    case 7:
+        espaço()
+        print_escolha('Rio Grande do Sul', 'Santa Catarina', 'NORMAL', nRS)
 
-elif viagem == 10:
-    espaço()
-    print_escolha('Rio de Janeiro', 'Paraná', 'NORMAL', nRJ)
+    case 8:
+        espaço()
+        print_escolha('Bahia', 'Minas Gerais', 'NORMAL', nBH)
 
-elif viagem == 11:
-    espaço()
-    print_escolha('Rio de Janeiro', 'São Paulo', 'ALTA', aRJ)
+    case 9:
+        espaço()
+        print_escolha('Ceará', 'Tocantins', 'NORMAL', nCE)
 
-elif viagem == 12:
-    espaço()
-    print_escolha('Rio Grande do Sul', 'Santa Catarina', 'ALTA', aRS)
+    case 10:
+        espaço()
+        print_escolha('Rio de Janeiro', 'Paraná', 'NORMAL', nRJ)
 
-elif viagem == 13:
-    espaço()
-    print_escolha('Bahia', 'Minas Gerais', 'ALTA', aBH) 
+    case 11:
+        espaço()
+        print_escolha('Rio de Janeiro', 'São Paulo', 'ALTA', aRJ)
 
-elif viagem == 14:
-    espaço()
-    print_escolha('Ceará', 'Tocantins', 'ALTA', aCE)
+    case 12:
+        espaço()
+        print_escolha('Rio Grande do Sul', 'Santa Catarina', 'ALTA', aRS)
 
-elif viagem == 15:
-    espaço()
-    print_escolha('Rio de Janeiro', 'Paraná', 'ALTA', aRJ)
-    
+    case 13:
+        espaço()
+        print_escolha('Bahia', 'Minas Gerais', 'ALTA', aBH)
+
+    case 14:
+        espaço()
+        print_escolha('Ceará', 'Tocantins', 'ALTA', aCE)
+
+    case 15:
+        espaço()
+        print_escolha('Rio de Janeiro', 'Paraná', 'ALTA', aRJ)
+
+    case _:
+        print('OPS...viagem não encontrada')
+
+
